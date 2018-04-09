@@ -1,0 +1,13 @@
+home
+school
+farm
+pft
+plot
+park
+traffic
+company
+
+
+about
+teacher
+index
