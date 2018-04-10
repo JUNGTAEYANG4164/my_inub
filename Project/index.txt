@@ -1,0 +1,9 @@
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-getting-started-examples.html
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-examples-connecting.html
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-examples-query.html
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-examples-results.html
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-examples-prepared-statements.html
+https://dev.mysql.com/doc/connector-cpp/en/connector-cpp-examples-complete-example-1.html
+http://hyeonstorage.tistory.com/111
+http://dosnipe.tistory.com/39
+http://mayple.tistory.com/entry/CSTL-12%EC%9E%A5-stringhttp://forum.falinux.com/zbxe/index.php?document_srl=429387&mid=C_LIB

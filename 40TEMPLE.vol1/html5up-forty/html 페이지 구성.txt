@@ -9,5 +9,4 @@ company
 
 
 about
-teacher
 index

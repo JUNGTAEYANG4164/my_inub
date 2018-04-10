@@ -1,0 +1,4 @@
+ALTER DATABASE 데이터베이스_이름 CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE 테이블_이름 CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE DATABASE 데이터베이스_이름 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
