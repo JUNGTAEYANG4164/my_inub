@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unmanned pft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./css/lightslider.css"/>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","70%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+    </script>
+    
+</head>
+<body>
+        <div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>ICEMHS</strong> <span>MDP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main -->
+					<div id="main" class="alt">
+
+                            <!-- One -->
+                                <section id="one">
+                                    <div class="inner">
+                                        <header class="major" style="margin:auto">
+                                            <h1>Unmanned 작품 소개</h1>
+                                            <p align="center">
+                                                    <strong>조원 : 지소민, 정현기, 서동우, 문지혁</strong>
+                                            </p>
+                                        </header>
+                                        </br>
+                                        <div class="youtube">
+                                            <p align ="middle">
+                                            <iframe width="560" height="315" 
+                                            src="https://www.youtube.com/embed/RZ82CyBgvuI" frameborder="0" allowfullscreen="">
+                                            </iframe></p>
+                                        </div>
+                                    
+									<h3> 체력장 부활만 해내도, 잘했다 소리 들을 것 </h3>
+                                    <p>
+                                            대한체육회는 한국 아마추어 스포츠를 대표하는 단체로 국제올림픽위원회(IOC), 아시아올림픽평의회(OCA) 등 국제 스포츠 기구에서 대한민국을 대표한다. 1920년 창립한 조선체육회가 모체다. 1938년 일제에 의해 해산됐지만 1945년 해방과 함께 부활했다. </br></br>
+                                            체육 운동의 범국민화, 학교·생활체육 진흥, 우수 선수 육성 및 국위 선양, 가맹단체 지원, 올림픽 운동 확산이 설립 목표다. 이사회와 대의원총회, 12개의 위원회, 사무처 등으로 구성됐다. 산하에 축구·육상 등 56개 정가맹경기단체, 17개 시·도체육회, 17개 해외지부를 거느리고 있다. 2013년 예산은 1700억원에 이른다. </br></br>
+                                    </p>
+                                            <ul class="actions">
+                                                <li><a href="db.html" class="button next scrolly">Data Check</a></li>
+                                            </ul>
+                                        </div>
+							</section>
+
+					</div>
+	<!-- Footer -->
+    <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li><h5>&copy; 2018. 인천전자마이스터고 정보통신기기과 정태양, 노하늘, 노예원, 박재환, 천예준</h5></li>
+                    <li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+		
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+           
+
+    </div>
+</body>

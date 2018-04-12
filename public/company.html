@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./css/lightslider.css"/>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","70%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+    </script>
+    
+</head>
+<body>
+        <div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>ICEMHS</strong> <span>MDP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main -->
+					<div id="main" class="alt">
+
+                            <!-- One -->
+                                <section id="one">
+                                    <div class="inner">
+                                        <header class="major" style="margin:auto">
+                                            <h1>Smart Company 작품 소개</h1>
+                                            <p align="center">
+                                                    <strong>조원 : 조승준, 주예찬, 설혁수, 이시온</strong>
+                                            </p>
+                                        </header>
+                                        </br>
+                                        <div class="youtube">
+                                            <p align ="middle">
+                                            <iframe width="560" height="315" 
+                                            src="https://www.youtube.com/embed/K4u4Dpl6NKk" frameborder="0" allowfullscreen="">
+                                            </iframe></p>
+                                        </div>
+                                    
+									<h3> 알파고도 울고 갈 세계최고 AI는 중국 기업 </h3>
+                                    <p>
+                                        중국의 얼굴 인식 기술 개발업체 센스타임(SenseTime·商湯)이 세계에서 가장 기업 가치가 높은 인공지능(AI) 스타트업(초기 벤처기업)이 됐다고 미국 월스트리트저널 등 외신들이 9일(현지 시각) 보도했다. </br></br>
+                                        외신에 따르면 센스타임은 AI 스타트업으로는 최대 규모인 6억달러(약 6400억원) 규모의 투자 유치에 성공하며 기업가치가 45억달러(약 4조8000억원)에 달한다는 평가를 받았다. </br></br>
+                                        2014년 설립한 센스타임은 CCTV 영상 속 보행자의 얼굴을 정확하게 인식하는 인공지능 기술을 개발했다. 이 기술은 현재 중국 내 40여개 공공기관에서 범죄 용의자를 찾는 데 활용되고 있다. 수십m 이상 떨어진 사람의 신원까지 정확하게 가려낼 만큼 얼굴 인식에서 세계 최고 기술력을 자랑한다. </br></br> 
+                                    </p>
+                                            <ul class="actions">
+                                                <li><a href="db.html" class="button next scrolly">Data Check</a></li>
+                                            </ul>
+                                        </div>
+							</section>
+
+					</div>
+	<!-- Footer -->
+    <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li><h5>&copy; 2018. 인천전자마이스터고 정보통신기기과 정태양, 노하늘, 노예원, 박재환, 천예준</h5></li>
+                    <li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+		
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+           
+
+    </div>
+</body>

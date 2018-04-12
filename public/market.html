@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Market</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./css/lightslider.css"/>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","70%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+    </script>
+    
+</head>
+<body>
+        <div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>ICEMHS</strong> <span>MDP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main -->
+					<div id="main" class="alt">
+
+                            <!-- One -->
+                                <section id="one">
+                                    <div class="inner">
+                                        <header class="major" style="margin:auto">
+                                            <h1>Smart Market 작품 소개</h1>
+                                            <p align="center">
+                                                    <strong>조원 : 오지헌, 최찬경, 김은서, 박서준</strong>
+                                            </p>
+                                        </header>
+                                        </br>
+                                        <div class="youtube">
+                                            <p align ="middle">
+                                            <iframe width="560" height="315" 
+                                            src="https://www.youtube.com/embed/NrmMk1Myrxc" frameborder="0" allowfullscreen="">
+                                            </iframe></p>
+                                        </div>
+                                    
+									<h3> 무인마트 ‘아마존 고’에서 ‘도둑질’ 시도해보니…  </h3>
+                                    <p>
+                                            “도둑질하는 기분이네요.” </br></br>
+                                            22일 미국 시애틀에 문을 여는 아마존의 무인 편의점 ‘아마존 고’를 미리 체험한 <뉴욕 타임스> 기자는 아마존에서 이 편의점에서 물건을 구매하는 게 꼭 도둑질하는 것 같은 느낌이라고 했다. 계산원이 없을뿐더러 계산대조차 없는 이 편의점에선 물건을 집자마자 통상의 계산 절차 없이 가게 내부에서 바로 가방에 담을 수 있기 때문이다. 하지만 편의점에 적용된 인공지능(AI) 기술 덕에 ‘실제 도둑질’이 일어나긴 쉽지 않다는 평가다. </br></br>
+                                            ‘아마존 고’를 이용하려면 전용 애플리케이션 설치가 필수다. 편의점 입구에는 지하철 개찰구 같은 입장 장치가 설치돼 있고 이 장치에 앱을 인식해야 상점에 들어갈 수 있다. 167㎡ 규모의 내부에는 여느 편의점과 같이 음료수, 과자 등 각종 상품이 진열돼 있다. 소비자가 선반에서 제품을 꺼내는 순간 제품은 앱 내부의 가상 장바구니에 담기게 된다. 선반에 다시 물건을 올려놓으면 물건은 장바구니에서 삭제된다. 편의점 내부에 설치된 수백개의 카메라와 인공지능 기술의 결합이 개별 소비자와 상품을 식별해 장바구니에 담는 것을 가능하게 한다. 가상의 장바구니에 담긴 물건은 상점을 나올 때 다시 거치는 개찰구에서 자동으로 계산된다.</br></br>
+                                    </p>
+                                            <ul class="actions">
+                                                <li><a href="db.html" class="button next scrolly">Data Check</a></li>
+                                            </ul>
+                                        </div>
+							</section>
+
+					</div>
+	<!-- Footer -->
+    <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li><h5>&copy; 2018. 인천전자마이스터고 정보통신기기과 정태양, 노하늘, 노예원, 박재환, 천예준</h5></li>
+                    <li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+		
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+           
+
+    </div>
+</body>

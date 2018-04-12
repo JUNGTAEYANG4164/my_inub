@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Farm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./css/lightslider.css"/>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","70%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+    </script>
+    
+</head>
+<body>
+        <div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>ICEMHS</strong> <span>MDP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main -->
+					<div id="main" class="alt">
+
+                            <!-- One -->
+                                <section id="one">
+                                    <div class="inner">
+                                        <header class="major" style="margin:auto">
+                                            <h1>Smart Farm 작품 소개</h1>
+                                            <p align="center">
+                                                    <strong>조원 : 김민혁, 이재훈, 안청빈, 최미란</strong>
+                                            </p>
+                                        </header>
+                                        </br>
+                                        <div class="youtube">
+                                            <p align ="middle">
+                                            <iframe width="560" height="315" 
+                                            src="https://www.youtube.com/embed/BzZv9LzsB6Y" frameborder="0" allowfullscreen="">
+                                            </iframe></p>
+                                        </div>
+                                    
+									<h3> 스마트팜 기술동향 및 전망 </h3>
+                                    <p>우리나라 농업 경쟁력을 높이기 위한 방안으로 스마트팜 기술에 대한 논의가 활발하다. 현재 스마트팜은 외산시스템 도입을 통해 선도농가를 중심으로 파프리카, 딸기, 토마토 등의 재배에 일부 적용되고 있고, 농림수산식품부는 시범사업을 통한 확산 의지를 피력하고 있다. </br></br>
+                                        그러나 우리 실정은 스마트팜 주요 장비의 외산 의존에 따른 구조적 한계점(경제성 및 유지보수성 취약)에 봉착하고, 농가의 실질적 소득증가 기여도가 낮은 수준에 머물러 있다. 따라서 본고는 최근 국내외 스마트팜 기술의 현황 및 문제점을 분석하여 이를 기반으로 향후 발전방향에 대해 언급하고자 한다. </br></br>
+                                        스마트팜 주요 장비의 국산화 및 표준화, 가공·유통·외식·관광·레저 등 2/3차 산업 및 기상·물환경 등 타 산업과의 융복합을 통한 새로운 부가가치 창출이 핵심사항으로 여겨진다. </br></br>
+                                    </p>
+                                            <ul class="actions">
+                                                <li><a href="db.html" class="button next scrolly">Data Check</a></li>
+                                            </ul>
+                                        </div>
+							</section>
+
+					</div>
+	<!-- Footer -->
+    <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li><h5>&copy; 2018. 인천전자마이스터고 정보통신기기과 정태양, 노하늘, 노예원, 박재환, 천예준</h5></li>
+                    <li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+		
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+           
+
+    </div>
+</body>

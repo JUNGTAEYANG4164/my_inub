@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart School</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./css/lightslider.css"/>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","70%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+    </script>
+    
+</head>
+<body>
+        <div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>ICEMHS</strong> <span>MDP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main -->
+					<div id="main" class="alt">
+
+                            <!-- One -->
+                                <section id="one">
+                                    <div class="inner">
+                                        <header class="major" style="margin:auto">
+                                            <h1>Smart School 작품 소개</h1>
+                                            <p align="center">
+                                                    <strong>조원 : 황재하, 김민희, 김기태, 김주빈</strong>
+                                            </p>
+                                        </header>
+                                        </br>
+                                        <div class="youtube">
+                                            <p align ="middle">
+                                            <iframe width="560" height="315" 
+                                            src="https://www.youtube.com/embed/tytTk7R8C50" frameborder="0" allowfullscreen="">
+                                            </iframe></p>
+                                        </div>
+                                    
+									<h3>  미래의 학교를 가다, 스마트 스쿨 </h3>
+                                    <p>
+                                        미래의 학교는 어떤 모습일까? 웨어러블 디바이스 기기의 활용과 온라인 강의, 개인 맞춤형 수업진행, 유전자 맞춤형 급식 등 미래의 학교 모습을 살펴보자.</br></br>        
+                                    </p>
+                                            <ul class="actions">
+                                                <li><a href="db.html" class="button next scrolly">Data Check</a></li>
+                                            </ul>
+                                        </div>
+							</section>
+
+					</div>
+	<!-- Footer -->
+    <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li><h5>&copy; 2018. 인천전자마이스터고 정보통신기기과 정태양, 노하늘, 노예원, 박재환, 천예준</h5></li>
+                    <li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+		
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+           
+
+    </div>
+</body>
