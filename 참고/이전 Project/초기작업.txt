@@ -1,8 +1,0 @@
-apt-get install build-essential
-apt-get install libmysqlcppconn-dev
-apt-get install libboost-all-dev
-apt-get install mysql-server
-
-vi /etc/mysql/my.cnf -> Bind 0.0.0.0
-create database
-grant all privileges on *.* to 'root'@'%' identified by 'korea1234'
