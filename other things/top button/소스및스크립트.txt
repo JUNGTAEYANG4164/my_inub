@@ -1,0 +1,45 @@
+글을 잘 보시고 위치에 붙여넣으시면 됩니다.
+
+
+
+
+
+HTML 페이지
+
+<!-- gptop버튼 -->
+<a class="top" href="#"><div class="go_top"><span>TOP</span></div></a>
+
+
+
+
+<!-- gptop버튼 -->
+<script>
+$(document).ready(function(){
+	$(".top").click(function(){
+		return $("html, body").animate({scrollTop:0},300),!1})
+
+	$(".top").hide();
+
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.top').fadeIn();
+			} else {
+				$('.top').fadeOut();
+			}
+		});
+	});
+});
+</script>
+
+
+
+
+
+
+
+CSS 페이지
+
+/* go_top */
+.go_top {position:fixed; bottom:20px; right:10px; width:40px;height:40px;text-align:center;border-radius:40px;background-color:rgba(102,102,102,.7)}
+.go_top span {display:block;padding-top:12px;font-size:11px;color:#fff;}				

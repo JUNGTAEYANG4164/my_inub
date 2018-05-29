@@ -1,5 +1,7 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@font-face{font-family:'NanumGothicBold'; src:url('/assets/fonts/NanumGothicBold.ttf')}
+@font-face{font-family:'NanumGothicBold'; src:url('/assets/fonts/NanumGothicBold.otf')}
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic"); */
 
 /*
 	Prologue by HTML5 UP
@@ -8,7 +10,8 @@
 */
 
 /* Reset */
-
+ 
+	/*모든 요소에 간격 0,폰트크기 100% 적용*/
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -17,15 +20,15 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
+	/*float 등에도 위치에 영향받지 않도록*/
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
-
+	/*늘 엘리먼트의 가운데에 위치하도록*/
 	body {
 		line-height: 1;
 	}
-
+	
 	ol, ul {
 		list-style: none;
 	}
@@ -57,6 +60,7 @@
 	}
 
 /* Containers */
+	/*이하로 다음 한글 주석까지 디바이스 크기에 따른 컨텐츠 크기 조정(반응형) 적용을 위한 코드*/
 
 	.container {
 		margin-left: auto;
@@ -1432,7 +1436,7 @@
 			clear: none;
 			margin-left: 0;
 		}
-
+ody
 		.\39 u\28mobile\29, .\39 u\24\28mobile\29 {
 			width: 75%;
 			clear: none;
@@ -1548,15 +1552,15 @@
 
 	}
 
-/* Basic */
+/*기본적 css 설정. 버튼,보디,이미지 등의 디폴트 설정(템플릿?)을 미리 만들어 준 것으로 보임.*/
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
-		font-weight: 300;
+		font-family: 'NanumGothicBold';
+		font-size: 15pt;
+		font-weight: 250;
 		line-height: 1.75em;
-		color: #888;
+		color: #000;
 	}
 
 		body.is-loading * {
@@ -1571,16 +1575,16 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-family: 'NanumGothicBold';
+		font-size: 18pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #000;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #000;
 		line-height: 1.5em;
 	}
 
@@ -1590,7 +1594,7 @@
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+			color: #000;
 		}
 
 	h2 {
@@ -1599,11 +1603,11 @@
 	}
 
 		h2.alt {
-			color: #888;
+			color: #000;
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #000;
 			}
 
 	h3 {
@@ -1624,7 +1628,7 @@
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: #000;
 	}
 
 	em, i {
@@ -2034,7 +2038,7 @@
 				#header .icons a:hover {
 					color: #fff;
 				}
-
+	/*좌상단의 로고 코드*/
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
@@ -2064,7 +2068,7 @@
 			left: 0;
 			top: 0;
 		}
-
+/*네비게이터(좌측 사이드바) 소스코드*/
 	#nav ul {
 		margin-bottom: 0;
 	}
@@ -2107,7 +2111,7 @@
 					color: #e27689;
 				}
 
-/* Footer */
+/* Footer 소스코드*/
 
 	#footer {
 		margin-left: 375px;
@@ -2137,7 +2141,7 @@
 					margin-left: 0;
 				}
 
-/* Main */
+/* Main 소스코드*/
 
 	#main {
 		margin-left: 375px;
@@ -2205,7 +2209,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 15pt;
 			}
 
 		/* Header */
@@ -2251,7 +2255,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 15pt;
 			}
 
 			.container {
@@ -2326,7 +2330,7 @@
 			}
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 15pt;
 			}
 
 			header br {
@@ -2502,14 +2506,14 @@
 
 	}
 
-/* Mobile */
+/* 모바일 구동시 레이아웃 사이즈 설정 */
 
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 15pt;
 			}
 
 			h2 {

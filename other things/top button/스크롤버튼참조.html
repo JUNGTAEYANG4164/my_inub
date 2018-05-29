@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<!-- 제이쿼리 head 사이에 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- 버튼모양 -->
+<style>
+.go_top {position:fixed; bottom:20px; right:10px; width:40px;height:40px;text-align:center;border-radius:40px;background-color:rgba(102,102,102,.7)}
+.go_top span {display:block;padding-top:12px;font-size:11px;color:#fff;}
+</style>
+<body>
+<!-- HTML 샘플 -->
+<div style="height:2000px"></div>
+<a class="top" href="#"><div class="go_top"><span>TOP</span></div></a>
+
+
+
+
+<!-- 아래와 같이 BODY닫기 바로 직전  -->
+<script>
+$(document).ready(function(){
+	$(".top").click(function(){
+		return $("html, body").animate({scrollTop:0},300),!1})
+
+	$(".top").hide();
+
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.top').fadeIn('slow');
+			} else {
+				$('.top').fadeOut('slow');
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>

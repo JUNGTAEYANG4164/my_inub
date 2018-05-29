@@ -5,7 +5,7 @@
 */
 
 (function($) {
-
+	//중단점
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
 		normal: '(min-width: 961px) and (max-width: 1620px)',
@@ -19,21 +19,21 @@
 		var	$window = $(window),
 			$body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
+		//페이지가 완전히 로딩될때까지 애니메이션 등을 실행하지 않음
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
 			});
 
-		// CSS polyfills (IE<9).
+		// CSS polyfills (IE<9). =IE버전 9 이상에서의 CSS 대체방안
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
 
-		// Fix: Placeholder polyfill.
+		// Fix: Placeholder polyfill. =플레이스홀더 대체방안
 			$('form').placeholder();
 
-		// Prioritize "important" elements on mobile.
+		// Prioritize "important" elements on mobile. =모바일에서 보여줄 주요 요소에 순위를 매김
 			skel.on('+mobile -mobile', function() {
 				$.prioritize(
 					'.important\\28 mobile\\29',
@@ -44,7 +44,7 @@
 		// Scrolly links.
 			$('.scrolly').scrolly();
 
-		// Nav.
+		// Nav.=네비게이션
 			var $nav_a = $('#nav a');
 
 			// Scrolly-fy links.
@@ -60,7 +60,7 @@
 
 						e.preventDefault();
 
-						// Clear active and lock scrollzer until scrolling has stopped
+						// 스크롤이 멈출 때까지 활성화된 상태를 해제하고 스크롤을 잠금
 							$nav_a
 								.removeClass('active')
 								.addClass('scrollzer-locked');
@@ -70,7 +70,7 @@
 
 					});
 
-			// Initialize scrollzer.
+			// 스크롤러 선언/정의
 				var ids = [];
 
 				$nav_a.each(function() {
@@ -86,7 +86,7 @@
 
 				$.scrollzer(ids, { pad: 200, lastHack: true });
 
-		// Header (narrower + mobile).
+		// Header 설정 (디스플레이가 작을 때 + 모바일).
 
 			// Toggle.
 				$(
