@@ -40,7 +40,8 @@
 /* ====================================================================================================================
  * BASE STYLES
  * ====================================================================================================================*/
-.flexslider {
+/*flexslider의 여백(margin,padding)을 0으로 함*/
+ .flexslider {
   margin: 0;
   padding: 0;
 }
@@ -48,10 +49,12 @@
   display: none;
   -webkit-backface-visibility: hidden;
 }
+/*슬라이드의 이미지를 100% 크기로 표시함*/
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
+/*슬라이드를 넘긴 후의 상태*/
 .flexslider .slides:after {
   content: "\0020";
   display: block;
@@ -70,7 +73,7 @@ html[xmlns] .flexslider .slides {
   display: block;
 }
 /* ====================================================================================================================
- * DEFAULT THEME
+ * 기본 테마
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
@@ -93,6 +96,7 @@ html[xmlns] .flexslider .slides {
   height: auto;
   -moz-user-select: none;
 }
+/*각 브라우저마다 시점 설정해줌*/
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -132,14 +136,14 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
-  font-size: 40px;
+  font-size: 60px;
   display: inline-block;
-  content: '\f001';
+  content: '>';
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
-  content: '\f002';
+  content: '<';
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
@@ -196,7 +200,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -40px;
+  bottom: -75px;
   text-align: center;
 }
 .flex-control-nav li {
